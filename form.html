@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testDatabase</title>
+</head>
+<link rel="stylesheet" href="./forForm/style.css">
+<body>
+    <header>
+        <h1>Enter your data here</h1>
+    </header>
+    <form class="container" action="./forForm/insertdata.php" method="post">
+        <li class="input_list">
+            <ul class="name">
+                <label for="input">Enter your name</label>
+                <input name="name" type="text" required>
+            </ul>
+            <ul class="email">
+                <label for="input">Enter your mail</label>
+                <input name="email" type="text" required>
+            </ul>
+        </li>
+        <button type="submit">submit</button>
+    </form>
+    <div class="viewtable">
+        <a href="./forForm/viewdata.php"><button>view table</button></a>
+    </div>
+</body>
+</html>
