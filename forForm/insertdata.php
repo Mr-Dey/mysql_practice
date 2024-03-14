@@ -26,6 +26,10 @@
     $connect->query($sql);
     $sql="INSERT INTO users(user_name,user_mail) VALUES ('$name','$email')";
     $connect->query($sql);
-    header("Location:http://127.0.0.1/learnsql/form.html");
+    try{
+        header("Location:http://127.0.0.1/learnsql/form.html");
+    }catch(Exception $e){
+        echo"this is it".$e->getMessage();
+    }
     exit();
 ?>

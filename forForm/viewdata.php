@@ -22,10 +22,10 @@
     $max_row=$result->num_rows;
     for($x=0;$x<$max_row;$x++){
         $row=$result->fetch_assoc();
-        // tablemaker($row["user_id"],$row["user_name"],$row["user_mail"]);
-        echo 
-        "<option value=".'$row["user_name"]'."></option>"
-        ;
+        tablemaker($row["user_id"],$row["user_name"],$row["user_mail"]);
+        // echo 
+        // "<option value=".'$row["user_name"]'."></option>"
+        // ;
     }
     echo 
     "<a href='http://localhost/learnsql/form.html'>
